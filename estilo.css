@@ -1,0 +1,673 @@
+
+
+/*================geral======================*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cabeçalho img {
+    /* border: 1px solid red;*/
+    width: 15%;
+    display: flex;
+    height: 40px;
+    padding-top: 0.3rem;
+}
+
+.box {
+    background: #f4f4f444;
+    width: 80%;
+    height: 100;
+    border-radius: 10px;
+}
+
+.box p{
+    color: #f4f4f4;
+    font-size: 0.8rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+}
+
+.box h2{
+    color: #D4A762;
+}
+
+/*================= caixa de perguntas =================*/
+
+.perguntas{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: #292929;
+    
+}
+.perguntas details summary{
+    
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2%;
+    color: white;
+    background: #3d3d3d;
+    
+}
+.perguntas details p{
+    padding: 2%;
+    color: white ;
+    font-size: 0.8rem;
+    margin: 0.8rem;
+    margin-left: 1px;
+}
+
+/*======================sobre==============================*/
+
+.sobre{
+
+    display: flex;
+    width: 100%;
+}
+.sobre h2{
+    color: #D4A762;
+    font-weight: 
+    800;
+}
+.sobre p{
+    color: white;
+    font-size: 10px;
+    margin: 8px;
+}
+/*==========================MOBILE===========================*/
+
+@media(max-width: 425px) {
+
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 375px;
+        height: 100%;
+        background-color: #333;
+
+    }
+
+    .cabeçalho {
+        /*border: 1px solid sandybrown;*/
+        background-image: url(img/bg-topo.png);
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        height: 38%;
+
+    }
+
+    .cabeçalho h1 {
+        display: block;
+        text-align: left;
+        font-size: 1.60rem;
+        width: 70%;
+        height: auto;
+        /*border: 1px solid salmon;*/
+        margin: 0;
+        padding: 0;
+        left: 29%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+
+    .cabeçalho p {
+        display: block;
+        text-align: left;
+        font-size: 1rem;
+        width: 70%;
+        height: auto;
+        /*border: 1px solid salmon;*/
+        margin-top: 0.70rem;
+        margin-left: 4%;
+        padding: 0;
+        left: 29%;
+
+    }
+
+    .cabeçalho button {
+        width: 14rem;
+        display: flex;
+        height: 1.80rem;
+        margin-left: 4%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        background: #D4A762;
+        text-decoration: none;
+        border-color: transparent;
+    }
+
+    .cabeçalho a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.70rem;
+        display: flex;
+        color: #333;
+        font-weight: 780;
+    }
+
+    .destaque {
+        color: #D4A762;
+    }
+
+    .barra {
+        display: flex;
+        background: #D4A762;
+        height: 47px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barra p {
+        font-size: 1.rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #333;
+    }
+
+    .area {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        /*border: 1px solid sandybrown;*/
+        height: 10%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .box h2{
+        
+        padding-bottom: 0;
+        /*border: 1px solid blue;*/
+        font-size: 1.25rem;
+        width: 80%;
+        margin-bottom: 0.5rem;
+        
+    }
+
+    .box p{
+
+        /*border: 1px solid green;*/
+        margin-bottom: 1rem;
+        margin-top: 0.1rem;
+        width: 90%;
+        text-align: center;
+
+    }
+    .imagemsobre{
+        background-image: url(img/Rectangle\ 11.png);
+        background-size: 10rem;
+        background-repeat: no-repeat;
+        
+        /*border: 1px solid blue;*/
+        width: 80%;
+        height: 15rem;
+        margin: 1rem;
+    }
+    .sobre h2{
+        display: flex; 
+        width: 100%;
+       /* border: 1px solid blue;*/
+        padding: 0;
+        margin: 0;
+        padding-right: 2rem;
+        margin-top: 8%;
+       
+       
+    }
+    .sobre p{
+        display: flex;
+        /*border: 1px solid blue;*/
+        margin-top: 4%;
+        padding: 0;
+        margin: 0;
+        padding-right: 2rem;
+        margin-top: 8%;
+        text-align: left;
+        width: 90%;
+    }
+       /*================CAIXA DE PERGUNTAS===============*/        
+    .area-perguntas{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        /*border: 1px solid red;*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    
+
+/*===================== TABLET =========================*/
+
+@media (min-width: 425px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+    }
+
+    .cabeçalho {
+        /*border: 1px solid sandybrown;*/
+        background-image: url(img/bg-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        padding-right: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cabeçalho h1 {
+        display: block;
+        text-align: left;
+        font-size: 2.60rem;
+        width: 80%;
+        height: auto;
+        /*border: 1px solid salmon;*/
+        margin: 0;
+        padding: 0;
+        left: 29%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+
+    .cabeçalho p {
+        display: block;
+        text-align: left;
+        font-size: 1rem;
+        width: 70%;
+        height: auto;
+        /*border: 1px solid salmon;*/
+        margin-top: 4rem;
+        margin-left: 4%;
+        padding: 0;
+        left: 29%;
+
+    }
+
+    .cabeçalho button {
+        width: 16rem;
+        display: flex;
+        height: 1.9rem;
+        margin-left: 4%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        background: #D4A762;
+        text-decoration: none;
+        border-color: transparent;
+    }
+
+    .cabeçalho a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.90rem;
+        display: flex;
+        color: #333;
+        font-weight: 780;
+    }
+    /*===============destaque====================*/
+    .destaque {
+        color: #D4A762;
+    }
+
+    .barra {
+        display: flex;
+        background: #D4A762;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barra p {
+        font-size: 1.30rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #333;
+    }
+
+    .area {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        /*border: 1px solid sandybrown;*/
+        height: 60%;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .box h2{
+        
+        padding-bottom: 0;
+        /*border: 1px solid blue;*/
+        font-size: 1.25rem;
+        width: 80%;
+        margin-bottom: 0.5rem;
+        
+    }
+
+    .box p{
+
+        /*border: 1px solid green;*/
+        margin-bottom: 1rem;
+        margin-top: 0.1rem;
+        width: 90%;
+        text-align: center;
+    }
+/*================CAIXA DE PERGUNTAS===============*/        
+    .area-perguntas{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        /*border: 1px solid red;*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+/*=================sobre==================*/    
+    .sobre{
+        border: 1px solid red;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
+    }
+    .imagemsobre{
+        display: flex;
+        background-image: url(img/Rectangle\ 11.png);
+        background-size: 16rem;
+        background-repeat: no-repeat;
+        border: 1px solid blue;
+        width: 33%;
+        height: 21rem;
+        margin: 1rem;
+        margin-left: 10rem;
+        
+    
+    }
+    .sobre h2{
+        display: flex; 
+        width: 100%;
+       /* border: 1px solid blue;*/
+        padding: 0;
+        margin: 0;
+        padding-right: 2rem;
+        margin-top: 8%;
+       
+       
+    }
+    .sobre p{
+        display: flex;
+        /*border: 1px solid blue;*/
+        margin-top: 4%;
+        padding: 0;
+        margin: 0;
+        padding-right: 2rem;
+        margin-top: 8%;
+        text-align: left;
+        width: 90%;
+    }
+}
+    /*================ DESKTOP ===========================*/
+
+@media (min-width:1000px) {
+    .logo{
+       /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+        zoom:1.5;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+    }
+
+    .cabeçalho {
+        /*border: 1px solid sandybrown;*/
+        background-image: url(img/bg-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        padding-right: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cabeçalho h1 {
+        display: block;
+        text-align: left;
+        font-size: 3rem;
+        width: 40%;
+        height: auto;
+        /*border: 1px solid salmon;*/
+        margin: 0;
+        padding: 0;
+        left: 29%;
+        margin-left: 4%;
+        margin-top: 5%;
+    }
+
+    .cabeçalho p {
+        display: block;
+        text-align: left;
+        font-size: 1rem;
+        width: 50%;
+        height: auto;
+        /*border: 1px solid salmon;*/
+        margin-top: 1rem;
+        margin-left: 4%;
+        padding: 0;
+        left: 29%;
+
+    }
+
+    .cabeçalho button {
+        width: 16rem;
+        display: flex;
+        height: 2rem;
+        margin-left: 4%;
+        margin-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        background: #D4A762;
+        text-decoration: none;
+        border-color: transparent;
+    }
+
+    .cabeçalho a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.90rem;
+        display: flex;
+        color: #333;
+        font-weight: 780;
+    }
+    /*===============destaque====================*/
+    .destaque {
+        color: #D4A762;
+    }
+
+    .barra {
+        display: flex;
+        background: #D4A762;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barra p {
+        font-size: 1.30rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #333;
+    }
+
+    .area {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        /*border: 1px solid sandybrown;*/
+        height: 60%;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .box h2{
+        
+        padding-bottom: 0;
+        /*border: 1px solid blue;*/
+        font-size: 1.25rem;
+        width: 80%;
+        margin-bottom: 0.5rem;
+        
+    }
+
+    .box p{
+        font-size: 1rem;
+        /*border: 1px solid green;*/
+        margin-bottom: 1rem;
+        margin-top: 0.1rem;
+        width: 90%;
+        text-align: center;
+    }
+/*================CAIXA DE PERGUNTAS===============*/        
+    .area-perguntas{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        /*border: 1px solid red;*/
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+/*=================sobre==================*/    
+    .sobre{
+        border: 1px solid red;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
+    }
+    .imagemsobre{
+        display: flex;
+        background-image: url(img/Rectangle\ 11.png);
+        background-size: 16rem;
+        background-repeat: no-repeat;
+        /*border: 1px solid blue;*/
+        width: 19%;
+        height: 21rem;
+        margin: 1rem;
+        margin-left: 10rem;
+        
+    
+    }
+    .sobre h2{
+        display: flex; 
+        width: 100%;
+       /* border: 1px solid blue;*/
+        padding: 0;
+        margin: 0;
+        padding-right: 2rem;
+        margin-top: 8%;
+       
+       
+    }
+    .sobre p{
+        display: flex;
+        /*border: 1px solid blue;*/
+        margin-top: 4%;
+        padding: 0;
+        margin: 0;
+        padding-right: 2rem;
+        margin-top: 8%;
+        text-align: left;
+        width: 90%;
+        
+    }
+}
