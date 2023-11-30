@@ -3,7 +3,7 @@
 /*================geral======================*/
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ac4a4a;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,11 +23,13 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #181818;
     color: white;
     text-align: center;
     padding: 1em;
     bottom: 0;
+    font-size: 0.80rem;
+    
 }
 
 img {
@@ -115,11 +117,14 @@ img {
 /*==========================MOBILE===========================*/
 
 @media(max-width: 576px) {
-
+    body{
+        width:auto;
+    }
     .container {
+        display: block;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 112%;
         height: 100%;
         background-color: #333;
 
@@ -242,12 +247,23 @@ img {
         text-align: center;
 
     }
+
+    .sobre{
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
+    }
+
     .imagemsobre{
+        display: flex;
         background-image: url(img/Rectangle\ 11.png);
         background-size: 10rem;
         background-repeat: no-repeat;
-        
-        /*border: 1px solid blue;*/
+        margin-left: 2rem;
+        /*border: 1px solid rgb(21, 255, 0);*/
         width: 80%;
         height: 15rem;
         margin: 1rem;
@@ -289,7 +305,7 @@ img {
 
 /*===================== TABLET =========================*/
 
-@media (min-width: 425px) {
+@media (min-width: 431px) {
     .container {
         margin: 0;
         padding: 0;
@@ -438,27 +454,28 @@ img {
         height: 100%;
         justify-content: center;
         
+        
     }
     .imagemsobre{
         display: flex;
         background-image: url(img/Rectangle\ 11.png);
-        background-size: 16rem;
+        background-size: 10rem;
         background-repeat: no-repeat;
-        /* border: 1px solid blue; */
-        width: 33%;
-        height: 21rem;
+        /*border: 1px solid blue;*/
+        width: 50%;
+        height: 17rem;
         margin: 1rem;
-        margin-left: 10rem;
+        margin-left: 5rem;
         
     
     }
     .sobre h2{
         display: flex; 
         width: 100%;
-       /* border: 1px solid blue;*/
+        /*border: 1px solid blue;*/
         padding: 0;
         margin: 0;
-        padding-right: 2rem;
+        padding-right: 1rem;
         margin-top: 8%;
        
        
@@ -469,7 +486,7 @@ img {
         margin-top: 4%;
         padding: 0;
         margin: 0;
-        padding-right: 2rem;
+        
         margin-top: 8%;
         text-align: left;
         width: 90%;
@@ -637,13 +654,13 @@ img {
     .imagemsobre{
         display: flex;
         background-image: url(img/Rectangle\ 11.png);
-        background-size: 16rem;
+        background-size: cover;
         background-repeat: no-repeat;
         /*border: 1px solid blue;*/
         width: 19%;
         height: 21rem;
         margin: 1rem;
-        margin-left: 10rem;
+        margin-left: 2rem;
         
     
     }
