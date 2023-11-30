@@ -1,5 +1,4 @@
 
-
 /*================geral======================*/
 body {
     font-family: Arial, sans-serif;
@@ -65,7 +64,9 @@ img {
 .box h2{
     color: #D4A762;
 }
-
+.imagem3{
+    object-fit: contain;
+}
 /*================= caixa de perguntas =================*/
 
 .perguntas{
@@ -124,7 +125,6 @@ img {
         display: block;
         margin: 0;
         padding: 0;
-        width: 112%;
         height: 100%;
         background-color: #333;
 
@@ -204,7 +204,9 @@ img {
     }
 
     .barra p {
-        font-size: 1.rem;
+        
+        margin:0;
+        font-size: 1rem;
         text-transform: uppercase;
         font-weight: 800;
         color: #333;
@@ -259,9 +261,6 @@ img {
 
     .imagemsobre{
         display: flex;
-        background-image: url(img/Rectangle\ 11.png);
-        background-size: 10rem;
-        background-repeat: no-repeat;
         margin-left: 2rem;
         /*border: 1px solid rgb(21, 255, 0);*/
         width: 80%;
@@ -270,7 +269,6 @@ img {
     }
     .sobre h2{
         display: flex; 
-        width: 100%;
        /* border: 1px solid blue;*/
         padding: 0;
         margin: 0;
@@ -282,11 +280,8 @@ img {
     .sobre p{
         display: flex;
         /*border: 1px solid blue;*/
-        margin-top: 4%;
         padding: 0;
         margin: 0;
-        padding-right: 2rem;
-        margin-top: 8%;
         text-align: left;
         width: 90%;
     }
@@ -318,7 +313,7 @@ img {
         /*border: 1px solid sandybrown;*/
         background-image: url(img/bg-tablet.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:auto;
         margin: 0;
         padding-left: 0;
         padding-top: 2rem;
@@ -392,6 +387,7 @@ img {
     }
 
     .barra p {
+        margin:0;
         font-size: 1.30rem;
         text-transform: uppercase;
         font-weight: 800;
@@ -458,20 +454,15 @@ img {
     }
     .imagemsobre{
         display: flex;
-        background-image: url(img/Rectangle\ 11.png);
-        background-size: 10rem;
-        background-repeat: no-repeat;
         /*border: 1px solid blue;*/
         width: 50%;
         height: 17rem;
         margin: 1rem;
         margin-left: 5rem;
-        
-    
     }
+  
     .sobre h2{
         display: flex; 
-        width: 100%;
         /*border: 1px solid blue;*/
         padding: 0;
         margin: 0;
@@ -588,6 +579,7 @@ img {
     }
 
     .barra p {
+        margin:0;
         font-size: 1.30rem;
         text-transform: uppercase;
         font-weight: 800;
@@ -653,9 +645,6 @@ img {
     }
     .imagemsobre{
         display: flex;
-        background-image: url(img/Rectangle\ 11.png);
-        background-size: cover;
-        background-repeat: no-repeat;
         /*border: 1px solid blue;*/
         width: 19%;
         height: 21rem;
