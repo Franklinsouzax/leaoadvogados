@@ -1,13 +1,16 @@
-
 /*================geral======================*/
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ac4a4a;
+    font-family: "Montserrat", Sans-serif;
+    background-color: #181818;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+i{
+    display: flex;
+    padding-top: 1%;
+    zoom: 3;
+}
 header {
     background-color: #333;
     color: white;
@@ -28,7 +31,7 @@ footer {
     padding: 1em;
     bottom: 0;
     font-size: 0.80rem;
-    
+
 }
 
 img {
@@ -47,6 +50,54 @@ img {
     padding-top: 0.3rem;
 }
 
+/*===============botão===================*/
+
+.cabeçalho button {
+    width: 14rem;
+    display: flex;
+    height: 1.80rem;
+    margin-left: 4%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    background: #D4A762;
+    text-decoration: none;
+    border: transparent;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.151);
+}
+
+.cabeçalho a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.90rem;
+    display: flex;
+    color: #333;
+    font-weight: 780;
+    text-shadow: 1px 1px 0.3cap #18181886;
+}
+
+.cabeçalho button:hover {
+    border: transparent;
+    box-shadow: 2px 2px 8px 2px rgba(54, 52, 45, 0.288) inset;
+}
+
+/*========================barra=========================*/
+
+.barra {
+    display: flex;
+    background: #D4A762;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #333;
+    text-shadow: 1px 3px 0.4cap rgba(0, 0, 0, 0.336);
+}
+
 .box {
     background: #f4f4f444;
     width: 80%;
@@ -54,22 +105,50 @@ img {
     border-radius: 10px;
 }
 
-.box p{
+.box p {
+    /*border: 1px solid green;*/
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    width: 90%;
+    text-align: center;
     color: #f4f4f4;
     font-size: 0.8rem;
-    font-family: 'Urbanist', sans-serif;
     font-weight: 400;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; 
 }
 
-.box h2{
+.box h2 {
+    padding-bottom: 0;
+    width: 80%;
+    margin-bottom: 0.5rem;
     color: #D4A762;
+    
 }
-.imagem3{
+
+.imagem3 {
     object-fit: contain;
 }
-/*================= caixa de perguntas =================*/
 
-.perguntas{
+/*================= caixa de perguntas =================*/
+.area {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-perguntas {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    /*border: 1px solid red;*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.perguntas {
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
@@ -78,56 +157,88 @@ img {
     margin-top: 1rem;
     margin-bottom: 2rem;
     background: #292929;
-    
 }
-.perguntas details summary{
-    
+
+.perguntas details summary {
+
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 5 00;
     padding: 2%;
     color: white;
     background: #3d3d3d;
-    
 }
-.perguntas details p{
+
+.perguntas details p {
     padding: 2%;
-    color: white ;
+    color: white;
     font-size: 0.8rem;
     margin: 0.8rem;
     margin-left: 1px;
 }
 
+/*========================BOX=============================*/
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    /*border: 1px solid sandybrown;*/
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2 {
+    font-size: 1.20rem;
+}
+
 /*======================sobre==============================*/
 
-.sobre{
-
+.sobre {
     display: flex;
     width: 100%;
+    height: 100%;
+    justify-content: center;
 }
-.sobre h2{
+
+.sobre h2 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 8%;
     color: #D4A762;
-    font-weight: 
-    800;
+    font-weight:800;
 }
-.sobre p{
+
+.sobre p {
+    margin-top: 4%;
+    display: flex;
     color: white;
     font-size: 10px;
     margin: 8px;
+    padding: 0;
+    margin-top: 8%;
+    text-align: left;
+    width: 90%;
+    margin-top: 8%;
+    text-align: left;
+    width: 90%;
 }
+
 /*==========================MOBILE===========================*/
 
 @media(max-width: 576px) {
-    body{
-        width:auto;
+    body {
+        width: auto;
     }
+
     .container {
         display: block;
         margin: 0;
         padding: 0;
         height: 100%;
         background-color: #333;
-
     }
 
     .cabeçalho {
@@ -138,7 +249,6 @@ img {
         padding-right: 0;
         width: 100%;
         height: 38%;
-
     }
 
     .cabeçalho h1 {
@@ -154,7 +264,8 @@ img {
         margin-left: 4%;
         margin-top: 10%;
     }
-
+       
+    }
     .cabeçalho p {
         display: block;
         text-align: left;
@@ -166,60 +277,30 @@ img {
         margin-left: 4%;
         padding: 0;
         left: 29%;
-
-    }
-
-    .cabeçalho button {
-        width: 14rem;
-        display: flex;
-        height: 1.80rem;
-        margin-left: 4%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 9px;
-        background: #D4A762;
-        text-decoration: none;
-        border-color: transparent;
-    }
-
-    .cabeçalho a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 0.70rem;
-        display: flex;
-        color: #333;
-        font-weight: 780;
     }
 
     .destaque {
         color: #D4A762;
+        font-weight: 800;
     }
 
     .barra {
-        display: flex;
-        background: #D4A762;
         height: 47px;
-        justify-content: center;
-        align-items: center;
     }
 
     .barra p {
-        
-        margin:0;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: #333;
+        font-size: 0.95rem;
     }
 
     .area {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-
+    i{
+        display: flex;
+        padding-top: 4%;
+        zoom: 2;
+    }
     .box {
         display: flex;
         flex-direction: column;
@@ -230,36 +311,12 @@ img {
         justify-content: center;
         align-items: center;
     }
-    .box h2{
-        
-        padding-bottom: 0;
-        /*border: 1px solid blue;*/
-        font-size: 1.25rem;
-        width: 80%;
-        margin-bottom: 0.5rem;
-        
+
+    .box h2 {
+        font-size: 1.20rem;
     }
 
-    .box p{
-
-        /*border: 1px solid green;*/
-        margin-bottom: 1rem;
-        margin-top: 0.1rem;
-        width: 90%;
-        text-align: center;
-
-    }
-
-    .sobre{
-        /*border: 1px solid red;*/
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        
-    }
-
-    .imagemsobre{
+    .imagemsobre {
         display: flex;
         margin-left: 2rem;
         /*border: 1px solid rgb(21, 255, 0);*/
@@ -267,40 +324,18 @@ img {
         height: 15rem;
         margin: 1rem;
     }
-    .sobre h2{
-        display: flex; 
-       /* border: 1px solid blue;*/
-        padding: 0;
-        margin: 0;
+
+    .sobre h2 {
         padding-right: 2rem;
-        margin-top: 8%;
-       
-       
     }
-    .sobre p{
-        display: flex;
-        /*border: 1px solid blue;*/
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        width: 90%;
-    }
-       /*================CAIXA DE PERGUNTAS===============*/        
-    .area-perguntas{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        /*border: 1px solid red;*/
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-}
-    
+
+
+
 
 /*===================== TABLET =========================*/
 
 @media (min-width: 431px) {
+
     .container {
         margin: 0;
         padding: 0;
@@ -313,7 +348,7 @@ img {
         /*border: 1px solid sandybrown;*/
         background-image: url(img/bg-tablet.png);
         background-repeat: no-repeat;
-        background-size:auto;
+        background-size: auto;
         margin: 0;
         padding-left: 0;
         padding-top: 2rem;
@@ -321,7 +356,6 @@ img {
         padding-right: 0;
         width: 100%;
         height: 100%;
-
     }
 
     .cabeçalho h1 {
@@ -349,59 +383,25 @@ img {
         margin-left: 4%;
         padding: 0;
         left: 29%;
-
     }
 
-    .cabeçalho button {
-        width: 16rem;
-        display: flex;
-        height: 1.9rem;
-        margin-left: 4%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 9px;
-        background: #D4A762;
-        text-decoration: none;
-        border-color: transparent;
-    }
 
-    .cabeçalho a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 0.90rem;
-        display: flex;
-        color: #333;
-        font-weight: 780;
-    }
     /*===============destaque====================*/
+   
     .destaque {
-        color: #D4A762;
+        color: hsl(36, 57%, 61%);
     }
 
     .barra {
-        display: flex;
-        background: #D4A762;
         height: 60px;
-        justify-content: center;
-        align-items: center;
     }
-
     .barra p {
-        margin:0;
         font-size: 1.30rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: #333;
     }
 
     .area {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        justify-content: center;
-        align-items: center;
     }
 
     .box {
@@ -414,45 +414,15 @@ img {
         justify-content: center;
         align-items: center;
     }
-    .box h2{
-        
-        padding-bottom: 0;
-        /*border: 1px solid blue;*/
+
+    .box h2 {
         font-size: 1.25rem;
-        width: 80%;
-        margin-bottom: 0.5rem;
-        
     }
 
-    .box p{
 
-        /*border: 1px solid green;*/
-        margin-bottom: 1rem;
-        margin-top: 0.1rem;
-        width: 90%;
-        text-align: center;
-    }
-/*================CAIXA DE PERGUNTAS===============*/        
-    .area-perguntas{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        /*border: 1px solid red;*/
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-/*=================sobre==================*/    
-    .sobre{
-        /*border: 1px solid red;*/
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        
-        
-    }
-    .imagemsobre{
+
+    /*=================sobre==================*/
+    .imagemsobre {
         display: flex;
         /*border: 1px solid blue;*/
         width: 50%;
@@ -460,38 +430,23 @@ img {
         margin: 1rem;
         margin-left: 5rem;
     }
-  
-    .sobre h2{
-        display: flex; 
-        /*border: 1px solid blue;*/
-        padding: 0;
-        margin: 0;
-        padding-right: 1rem;
-        margin-top: 8%;
-       
-       
+
+    .sobre h2 {
+        padding-right: 1rem;    
     }
-    .sobre p{
-        display: flex;
-        /*border: 1px solid blue;*/
-        margin-top: 4%;
-        padding: 0;
-        margin: 0;
-        
-        margin-top: 8%;
-        text-align: left;
-        width: 90%;
-    }
+
 }
-    /*================ DESKTOP ===========================*/
+
+/*================ DESKTOP ===========================*/
 
 @media (min-width:1000px) {
-    .logo{
-       /*border: 1px solid blue;*/
+    .logo {
+        /*border: 1px solid blue;*/
         width: 100%;
         height: 100%;
-        zoom:1.5;
+        zoom: 1.5;
     }
+
     .container {
         margin: 0;
         padding: 0;
@@ -540,60 +495,27 @@ img {
         margin-left: 4%;
         padding: 0;
         left: 29%;
-
     }
 
-    .cabeçalho button {
-        width: 16rem;
-        display: flex;
-        height: 2rem;
-        margin-left: 4%;
-        margin-top: 4rem;
-        justify-content: center;
-        align-items: center;
-        border-radius: 9px;
-        background: #D4A762;
-        text-decoration: none;
-        border-color: transparent;
-    }
 
-    .cabeçalho a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 0.90rem;
-        display: flex;
-        color: #333;
-        font-weight: 780;
-    }
+
     /*===============destaque====================*/
     .destaque {
         color: #D4A762;
     }
 
     .barra {
-        display: flex;
-        background: #D4A762;
         height: 60px;
-        justify-content: center;
-        align-items: center;
+
     }
 
     .barra p {
-        margin:0;
         font-size: 1.30rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: #333;
     }
 
     .area {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        justify-content: center;
-        align-items: center;
     }
 
     .box {
@@ -606,74 +528,28 @@ img {
         justify-content: center;
         align-items: center;
     }
-    .box h2{
-        
-        padding-bottom: 0;
-        /*border: 1px solid blue;*/
+
+    .box h2 {
         font-size: 1.25rem;
-        width: 80%;
-        margin-bottom: 0.5rem;
-        
+
     }
 
-    .box p{
+    .box p {
         font-size: 1rem;
-        /*border: 1px solid green;*/
-        margin-bottom: 1rem;
-        margin-top: 0.1rem;
-        width: 90%;
-        text-align: center;
     }
-/*================CAIXA DE PERGUNTAS===============*/        
-    .area-perguntas{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        /*border: 1px solid red;*/
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-/*=================sobre==================*/    
-    .sobre{
-        /*border: 1px solid red;*/
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        
-    }
-    .imagemsobre{
+
+    /*=================sobre==================*/
+
+    .imagemsobre {
         display: flex;
         /*border: 1px solid blue;*/
         width: 19%;
         height: 21rem;
         margin: 1rem;
         margin-left: 2rem;
-        
-    
     }
-    .sobre h2{
-        display: flex; 
-        width: 100%;
-       /* border: 1px solid blue;*/
-        padding: 0;
-        margin: 0;
+    .sobre h2 { 
         padding-right: 2rem;
-        margin-top: 8%;
-       
-       
     }
-    .sobre p{
-        display: flex;
-        /*border: 1px solid blue;*/
-        margin-top: 4%;
-        padding: 0;
-        margin: 0;
-        padding-right: 2rem;
-        margin-top: 8%;
-        text-align: left;
-        width: 90%;
-        
-    }
+
 }
